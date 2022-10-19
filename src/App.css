@@ -209,5 +209,13 @@ a:hover {
 
 .cultural-list-img-wrap {
   width: 800px;
-  margin: 0 auto;
+  margin: 30px auto;
+}
+
+.cultural-list-item-wrap {
+  margin: 50px 0 50px 0;
+}
+
+.link-width {
+  width: 100px;
 }

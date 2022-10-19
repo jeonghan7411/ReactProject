@@ -12,13 +12,13 @@ function CurturalItem({ cultural }) {
             alt={cultural.title}
           />
         </div>
-        <div className="">
+        <div className="cultural-list-item-wrap">
           <h3>
             {cultural.DOJIJUNG_NO == null ? "명칭없음" : cultural.DOJIJUNG_NO}
           </h3>
-          <div className="">
+          <div className="cultural-lits-item-title">
             <div className="title-bold">명칭 :</div>
-            <div>
+            <div className="link-width">
               <Link to={`show/${cultural.MYONGCHING}`}>
                 <h4>{cultural.MYONGCHING}</h4>
               </Link>
@@ -40,12 +40,11 @@ function CurturalItem({ cultural }) {
           <div className="  ">
             <div className="title-bold">내용 :</div>
             <div>
-              {cultural.CONTENT == null
-                ? "내용 없음"
-                : cultural.CONTENT.substring(0, 350) + "...."}
+              {cultural.CONTENT == null ? "내용 없음" : cultural.CONTENT}
             </div>
           </div>
         </div>
+        <hr />
       </div>
     </>
   );
