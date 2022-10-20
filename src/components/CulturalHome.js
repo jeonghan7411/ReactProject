@@ -1,8 +1,7 @@
 import CulturalSlider from "./CulturalSlider";
-import { FaAngleLeft, FaAngleRight, FaListUl } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import CulturalItem from "./CulturalItem";
+import LinkIcon from "./layout/LinkIcon";
 
 function CulturalHome({ cultural }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,11 +17,7 @@ function CulturalHome({ cultural }) {
 
   return (
     <div>
-      <div className="list-icon-wrap">
-        <Link to="list">
-          <FaListUl className="cultural-list-view" />
-        </Link>
-      </div>
+      <LinkIcon />
       <div className="cultural-item-wrap">
         {cultural.map((cultural, key) => {
           return (
@@ -37,6 +32,7 @@ function CulturalHome({ cultural }) {
           );
         })}
       </div>
+
       <div className="slide-btn-wrap">
         <div className="prev-btn">
           <button onClick={prevSlide}>

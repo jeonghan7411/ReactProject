@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-function Ex() {
+function CulturalMain() {
   return (
     <>
       <Outlet />
@@ -8,4 +8,4 @@ function Ex() {
   );
 }
 
-export default Ex;
+export default CulturalMain;

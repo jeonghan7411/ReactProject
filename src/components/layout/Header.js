@@ -5,8 +5,9 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
+import { useRef } from "react";
 
-function Header() {
+function Header({ cultural }) {
   return (
     <div>
       <header className="nav-header-wrap">

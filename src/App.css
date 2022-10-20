@@ -105,15 +105,66 @@ a:hover {
 
 /* navbar css end */
 
-.list-icon-wrap {
-  width: 1300px;
-  margin: 15px auto;
+.home-total-wrap {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #f7f7f7;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-.cultural-list-view {
-  font-size: 28px;
+.home-slide-btn-wrap {
+  position: absolute;
+}
+
+.home-cultural-img {
+  width: 500px;
+}
+
+/* home */
+.home-total-wrap {
+  width: 1000px;
+  margin: 50px auto;
+  background-image: url("../public/img/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-total-wrap > div:first-child {
+  background-color: rgba(17, 17, 17, 0.7);
+}
+
+.home-text-wrap {
+  height: 65%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.home-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-btn-wrap a {
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: steelblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .cultural-item-wrap {
@@ -218,4 +269,62 @@ a:hover {
 
 .link-width {
   width: 100px;
+}
+
+/* list end */
+
+.cultural-show-item-wrap {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-title-wrap h1 {
+  font-size: 52px;
+}
+
+.title-hanmun {
+  width: 200px;
+  font-size: 32px;
+  color: rgb(167, 167, 167);
+  position: relative;
+  left: 280px;
+  top: -90px;
+}
+
+.show-img-wrap {
+  display: flex;
+  margin: 30px 0;
+}
+
+.show-img {
+  margin-right: 10px;
+  width: 450px;
+  height: 500px;
+}
+
+.show-content-wrap hr {
+  margin-bottom: 30px;
+}
+
+.show-content-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.icon-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 1300px;
+  margin: 15px auto;
+}
+
+.icon-link-wrap div {
+  font-size: 28px;
+  margin-right: 10px;
 }

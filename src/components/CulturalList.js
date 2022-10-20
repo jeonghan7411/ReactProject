@@ -1,14 +1,9 @@
-import { Link } from "react-router-dom";
-import { FaRegSquare } from "react-icons/fa";
 import CulturalItem from "./CulturalItem";
+import LinkIcon from "./layout/LinkIcon";
 function CurturalList({ cultural }) {
   return (
     <>
-      <div className="list-icon-wrap">
-        <Link to="/cultural">
-          <FaRegSquare className="cultural-list-view" />
-        </Link>
-      </div>
+      <LinkIcon />
 
       <div className="cultural-list-wrap">
         {cultural.map((cultural, key) => {

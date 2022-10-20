@@ -28,19 +28,11 @@ function NavBar() {
         </NavLink>
 
         <NavLink
-          to="/sadsa"
-          style={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}
-          end
-        >
-          참여/소식
-        </NavLink>
-
-        <NavLink
           to="/sads"
           style={({ isActive }) => (isActive ? activeStyle : nonActiveStyle)}
           end
         >
-          기관소개
+          주변정보
         </NavLink>
       </div>
     </div>
