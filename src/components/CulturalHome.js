@@ -2,6 +2,7 @@ import CulturalSlider from "./CulturalSlider";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
 import LinkIcon from "./layout/LinkIcon";
+import "./CulturalHome.css";
 
 function CulturalHome({ cultural }) {
   const [currentSlide, setCurrentSlide] = useState(0);

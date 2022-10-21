@@ -1,0 +1,39 @@
+.cultural-item-wrap {
+  width: 1300px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #f7f7f7;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.slide-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slide-btn-wrap button {
+  margin: 10px;
+  font-size: 16px;
+  line-height: 8px;
+  background-color: rgb(218, 214, 210);
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}

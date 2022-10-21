@@ -1,5 +1,6 @@
 import CulturalItem from "./CulturalItem";
 import LinkIcon from "./layout/LinkIcon";
+import "./CulturalList.css";
 function CurturalList({ cultural }) {
   return (
     <>

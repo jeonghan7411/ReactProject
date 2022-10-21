@@ -1,0 +1,11 @@
+.icon-link-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 1300px;
+  margin: 15px auto;
+}
+
+.icon-link-wrap div {
+  font-size: 28px;
+  margin-right: 10px;
+}

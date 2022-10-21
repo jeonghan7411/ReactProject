@@ -1,15 +1,16 @@
 import { useParams } from "react-router-dom";
 import LinkIcon from "./layout/LinkIcon";
+import "./CulturalShow.css";
 
 function CulturalShow({ cultural }) {
   const { id } = useParams();
   return (
     <>
+      <LinkIcon />
       {cultural.map((cultural, key) => {
         if (cultural.MYONGCHING === id) {
           return (
             <div key={key}>
-              <LinkIcon />
               <div className="cultural-show-item-wrap">
                 <div className="show-title-wrap">
                   <div>
@@ -18,10 +19,11 @@ function CulturalShow({ cultural }) {
                   <div>
                     <h1>{cultural.MYONGCHING}</h1>
                   </div>
-                  <hr />
+
                   <div className="title-hanmun">
                     ({cultural.MYONGCHING_HANMUN})
                   </div>
+                  <hr />
                 </div>
 
                 <div className="show-img-wrap">
@@ -75,7 +77,11 @@ function CulturalShow({ cultural }) {
 
                   <div>
                     <span className="show-content-title">시대 : </span>
-                    <span className="show-content-sidae">{cultural.SIDAE}</span>
+                    <span className="show-content-sidae">
+                      {cultural.SIDAE == null
+                        ? "시대 알 수 없음"
+                        : cultural.SIDAE}
+                    </span>
                   </div>
 
                   <div>

@@ -1,18 +1,6 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-function Home({ cultural }) {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderTotal = cultural.length;
-
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === sliderTotal - 1 ? 0 : currentSlide + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? sliderTotal - 1 : currentSlide - 1);
-  };
-
+import "./Home.css";
+function Home() {
   return (
     <>
       <div className="home-total-wrap">
@@ -41,7 +29,7 @@ function Home({ cultural }) {
             <Link to="/cultural">문화재 안내</Link>
           </div>
           <div>
-            <Link to="/cultural">주변 정보</Link>
+            <Link to="/surround">주변 정보</Link>
           </div>
         </div>
       </div>

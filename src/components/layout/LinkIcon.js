@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaListUl, FaRegSquare } from "react-icons/fa";
+import "./LinkIcon.css";
 
 function LinkIcon() {
   return (

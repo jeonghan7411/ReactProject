@@ -1,0 +1,45 @@
+.surround-wrap {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.surround-top-wrap {
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.srd-top-icon-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.srd-top-icon {
+  font-size: 150px;
+  cursor: pointer;
+}
+
+.food {
+  color: rgb(252, 98, 52);
+}
+
+.trans {
+  color: rgb(240, 152, 45);
+}
+
+.house {
+  color: rgb(55, 197, 78);
+}
+
+.srdHr {
+  margin-bottom: 30px;
+}

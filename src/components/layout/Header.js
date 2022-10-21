@@ -5,7 +5,7 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
-import { useRef } from "react";
+import "./Header.css";
 
 function Header({ cultural }) {
   return (

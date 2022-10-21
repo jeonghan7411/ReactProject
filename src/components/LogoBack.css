@@ -1,0 +1,8 @@
+.logoback {
+  background-image: url("../../public/img/logoback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin: 30px 0;
+}
